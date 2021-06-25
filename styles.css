@@ -1,0 +1,652 @@
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    padding:0;
+    margin:0;
+    font-size:16px;
+    font-family: 'work sans';
+   overflow-x: hidden;
+
+}
+header{
+    background-image: url(images/BGImage.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+header > div{
+    flex: 1;
+    position: relative;
+    
+}
+header > div >div{
+    position: absolute;
+    top: 30%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+header > div > div > h1{
+    margin: 0;
+    padding: 0;
+    font-size: 400%;
+    margin-bottom: 8px;
+}
+header > div > div > p{
+font-size: 180%;
+padding:0;
+margin:0;
+font-family: "montserrat";
+font-weight: 600;
+color:#0B0828;
+}
+header > div > div > p > strong{
+font-weight: 800;
+color:#231B89;
+font-style: italic;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+    padding-top: 20px;
+}
+nav > a{
+    text-decoration: none;
+    color: #0B0828;
+    font-weight: 600;
+    font-family: 'Montserrat';
+
+}
+#ppdiv{
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    color: #0B0828;
+    font-weight: 600;
+}
+#benefitSection{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#F0F3FF, #F5F7FF);
+    justify-content: center;
+    align-items: center;
+}
+#benefitSection > h2{
+    font-size:300%;
+    text-align:center;
+    font-weight:500;
+
+}
+#benefitSection > h2 > strong{
+    font-weight:800;
+    color:#231B89;
+    text-transform: uppercase;
+    font-style:italic;
+    
+}
+#handHeldSection{
+    width:1000px;
+}
+#handHeldSection,
+#fastSection, #accurateSection{
+    position:relative;
+    
+}
+#handHeldSection >div,
+#fastSection > div,
+#accurateSection > div{
+    display:flex;
+}
+
+#handHeldSection >div{
+    margin-top: 180px;
+}
+
+#handHeldSection >div > img,
+#fastSection > div > img,
+#checkIconBox > img{
+    width:45px;
+    height:45px;
+    margin-top:10px;
+}
+#handHeldSection >div>div,
+#fastSection > div > div,
+#accurateSection > div > div{
+    margin-left:24px;
+}
+#handHeldSection >div>div>h3,
+#fastSection > div > div > h3,
+#accurateSection > div > div > h3{
+    font-size:300%;
+    font-family: "Work Sans";
+    font-weight:800;
+    padding:0;
+    margin:0;
+    color:#231B89;
+    margin-bottom:10px;
+}
+
+#handHeldSection >div>div>p,
+#fastSection > div > div > p,
+#accurateSection > div > div > p{
+    font-family:"montserrat";
+    font-weight:500;
+    color:#262437;
+    font-size:200%;
+    padding:0;
+    margin:0;
+
+}
+
+#handHeldSection> img{
+    position: absolute;
+    top: -135px;
+    right: -34px;
+    width: 60%;
+
+}
+
+#twoForone{
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    z-index: 2;
+}
+#bGRect{
+    position: absolute;
+    left:0;
+    right:0;
+    width:100%;
+    top:150px;
+    z-index: -1;
+}
+#fastSection{
+    width: 1000px;
+}
+#fastSection > div{
+    float: right;
+    margin-top: 500px;
+}
+#accurateSection{
+    display: flex;
+    padding-top: 500px;
+    padding-bottom:80px;
+    width:1000px;
+}
+#accurateSection > div{
+    margin-top:40px;
+}
+#rib{
+    width: 100%;
+    display: flex;
+    margin-left: 25px;
+    flex: 1;
+}
+#rib > img{
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius:10px;
+    width: 100%;
+  height: auto;
+  align-self: flex-start;
+}
+
+#checkIconBox{
+    margin-right: 25px;
+    flex: 1;
+}
+
+#easilyMeasureSection{
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#easilyMeasureSection h2{
+padding:0;
+font-size:300%;
+font-weight:500;
+text-align: center;
+
+}
+#easilyMeasureSection>h2>strong{
+    color:#231B89;
+    font-weight:800;
+    font-style: italic;
+}
+#easilyMeasureSection > div{
+    display: flex;
+    padding:40px 0;
+    width: 1000px;
+}
+#ulContainer{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#easilyMeasureSection > div > div > img{
+    width: 450px;
+    height: auto;
+}
+#ulContainer > ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    margin-left:100px;
+    margin-top: 40px;
+}
+#ulContainer > ul > li{
+    padding-bottom:25px;
+    font-weight: 600;
+    font-size:200%;
+    font-family: "montserrat";
+}
+
+
+
+
+#measureExampleContainerTop,
+#measureExampleContainerBottom{
+    display:flex;
+    margin-top: 60px;
+}
+#measureExampleContainerBottom{
+    margin-bottom: 60px;
+}
+.measureExample{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.measureExample img{
+    height:375px;
+    width: auto;
+    border-radius: 10px;;
+    box-shadow: 0px 5px 10px rgb(0 0 0 / 50%), 0px 15px 25px rgb(0 0 0 / 15%);
+}
+.measureExample > p{
+    font-size: 160%;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+#videoSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:50px;
+}
+#videoSection > div{
+    width:1000px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#videoSection >div > h2{
+    margin-top: 60px;
+    text-align: center;
+    font-size:300%;
+}
+#videoSection >div> div{
+    box-shadow: 0px 5px 10px rgb(0 0 0 / 50%), 0px 15px 25px rgb(0 0 0 / 15%);
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height:0;
+}
+#videoSection > div > div> iframe{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+}
+
+#svgDiv{
+    position: relative;
+}
+#svgDiv > img{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+#contactSection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#F5F7FF;
+    /* background-color:#fFF; */
+
+    padding-bottom: 40px;;
+}
+#contactSection > img{
+    position:absolute;
+    width: 100%;
+    
+    /* top: -100%; */
+    transform: translateY(65px);
+    z-index: -1;
+}
+#contactSection > h2{
+    font-size: 280%;
+    text-align: center;
+    font-weight: 600;
+}
+#contactSection > div{
+    width:600px;
+}
+fieldset{
+    border:none;
+    display: flex;  
+    flex-direction: column;
+    padding-left: 0;
+}
+fieldset > label{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 110%;
+}
+fieldset > input{
+    margin-bottom: 20px;
+    font-size: 105%;
+}
+fieldset > textarea{
+  
+    margin-bottom: 15px;
+    font-size:105%;
+}
+fieldset > input,
+fieldset > textarea{
+    padding:15px 10px;
+    border-radius: 4px;
+    border:none;
+    background-color:#fff;
+    box-shadow: inset 0 2px 2px rgb(0 0 0 / 10%);
+
+}
+input[type='submit']{
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    width: 91px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px;
+    font-family: 'Work Sans';
+    font-size: 100%;
+    color: #564FB0;
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
+}
+
+#patentPendingSection{
+      background-color:#0B0828;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+#patentPendingSection{
+    color:#fff;
+    font-weight:600;
+    font-size:150%;
+    text-align: center;
+text-transform: uppercase;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries for screens 1599 and below. */
+
+@media only screen  and (max-width : 1500px) {
+    header > div >div {
+        width:670px;
+        }
+}
+
+@media only screen  and (max-width : 1440px) {
+    
+   
+    #accurateSection > div >div >p > br{
+        display:none;
+    }
+}
+@media only screen and (max-width:1200px){
+    header {
+        height: 90vh;
+    }
+    header > div >div{
+        left:60%;
+    }
+}
+@media only screen  and (max-width : 1080px) {
+    /* start to make all the 1000 px 100% with 40px padding */
+    #handHeldSection,
+    #accurateSection,
+    #fastSection,
+    #easilyMeasureSection > div,
+    #videoSection > div{
+        width:100%;
+    }
+    #benefitSection,
+    #easilyMeasureSection,
+    #videoSection{
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    #benefitSection > h2{
+        margin-top: 00px;
+    }
+    #ulContainer > ul{
+        margin-left: 0;
+    }
+    #ulContainer{
+        justify-content: flex-start;
+    }
+    #ulContainer > ul{
+        margin-left:25px;
+    }
+    
+    
+   
+    
+}
+@media only screen  and (max-width : 1000px) {
+body{
+    font-size: 14px;
+}
+#handHeldSection> img{
+    top:-95px
+}
+#twoForone{
+    top:60px;
+}
+#fastSection > div{
+    margin-top: 350px;
+    margin-left: 300px;
+}
+#fastSection > div br{
+    display: none;
+}
+
+#easilyMeasureSection > div > div > img{
+    width:100%;
+
+}
+}
+@media only screen and (max-width:900px){
+    header {
+        height: 75vh;
+    }
+    header > div >div{
+        left:60%;
+        top:34%;
+    }
+    #twoForone{
+        width: 100%;;
+    }
+    #ulContainer > ul > li{
+        padding-bottom: 15px;;
+    }
+    #videoSection >div > h2{
+        font-size: 200%;
+    }
+    #accurateSection{
+        padding-top:360px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    #handHeldSection> img{
+        top: -14px;
+    }
+    #fastSection > div{
+        margin-top: 275px;
+        margin-left: 275px;
+    }
+    #accurateSection {
+        padding-top: 300px;
+        padding-bottom: 40px;
+    }
+    
+}
+@media only screen and (max-width: 768px){
+    #benefitSection > h2{
+        margin-bottom: 0;
+    }
+header{
+    height: 54vh;
+}
+header > div >div {
+left:75%;
+}
+#handHeldSection >div > img, #fastSection > div > img, #checkIconBox > img{
+    width: 30px;
+    margin-top:5px;
+    height:30px;
+}
+#handHeldSection >div>div>h3, #fastSection > div > div > h3, #accurateSection > div > div > h3{
+    font-size:250%;
+    margin-bottom:5px;
+}
+#handHeldSection >div>div>p, #fastSection > div > div > p, #accurateSection > div > div > p{
+    font-size: 150%;
+}
+
+header > div > div > h1{
+    font-size:300%;
+}
+header > div > div > p{
+    font-size:150%;
+}
+#fastSection > div {
+    margin-top: 267px;
+    margin-left: 218px;
+}
+#ulContainer > ul{
+    padding-top:0;
+    margin-top:0;
+    margin-left: 0;
+}
+#ulContainer > ul > li{
+    font-size:150%;
+    padding-bottom:7px;
+}
+#benefitSection > h2,
+#easilyMeasureSection h2{
+    font-size:270%;
+}
+}
+@media only screen and (max-width: 650px){
+    #contactSection{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    #contactSection > div{
+        width: 100%;
+    }
+    #checkIconBox{
+        margin-right: 0;
+    }
+    #fastSection > div{
+        margin-top: 222px;
+    margin-left: 180px;
+    }
+    #handHeldSection >div > img, #fastSection > div > img, #checkIconBox > img{
+        width: 25px;
+        margin-top:5px;
+        height:25px;
+    }
+    #handHeldSection >div>div>h3, #fastSection > div > div > h3, #accurateSection > div > div > h3{
+        font-size:200%;
+    }
+    #handHeldSection >div>div>p, #fastSection > div > div > p, #accurateSection > div > div > p{
+        font-size: 115%;
+    }
+    #handHeldSection >div>div, #fastSection > div > div, #accurateSection > div > div{
+        margin-left: 10px;
+    }
+    #benefitSection > h2, #easilyMeasureSection h2{
+        font-size: 225%;
+    }
+
+}
+@media only screen and (max-width: 600px){
+    #accurateSection{
+        padding-top:240px;
+    }
+    #videoSection >div > h2{
+        font-size: 160%;
+    }
+    
+
+}
+@media only screen and (max-width: 560px){
+#fastSection > div{
+    
+    margin-top: 185px;
+    margin-left: 155px;
+
+}
+header{
+    height: 46vh;
+}
+header > div >div {
+left:88%;
+}
+header > div > div > h1{
+    font-size: 250%;
+}
+header > div > div > p{
+    font-size:120%;
+}
+}
+
+
