@@ -166,6 +166,9 @@ nav > a{
     top:150px;
     z-index: -1;
 }
+#tightPipeContainer{
+    flex:1;
+}
 #fastSection{
     width: 1000px;
 }
@@ -400,7 +403,6 @@ input[type='submit']{
 }
 #patentPendingSection{
     color:#fff;
-    font-weight:600;
     font-size:150%;
     text-align: center;
 text-transform: uppercase;    
@@ -523,6 +525,9 @@ body{
 }
 
 @media only screen and (max-width: 850px){
+    header > div >div{
+        width: 573px;
+    }
     #handHeldSection> img{
         top: -14px;
     }
@@ -537,15 +542,17 @@ body{
     
 }
 @media only screen and (max-width: 768px){
+    header > div >div{
+        width: 430px;
+        left:60%;
+    }
     #benefitSection > h2{
         margin-bottom: 0;
     }
 header{
     height: 54vh;
 }
-header > div >div {
-left:75%;
-}
+
 #handHeldSection >div > img, #fastSection > div > img, #checkIconBox > img{
     width: 30px;
     margin-top:5px;
@@ -624,8 +631,14 @@ header > div > div > p{
     #videoSection >div > h2{
         font-size: 160%;
     }
+    #benefitSection, #easilyMeasureSection, #videoSection{
+        padding-right:20px;
+        padding-left:20px;
+    }
     
-
+    #handHeldSection> img{
+        right:-17px;
+    }
 }
 @media only screen and (max-width: 560px){
 #fastSection > div{
@@ -637,15 +650,136 @@ header > div > div > p{
 header{
     height: 46vh;
 }
-header > div >div {
-left:88%;
-}
+
 header > div > div > h1{
     font-size: 250%;
 }
 header > div > div > p{
     font-size:120%;
 }
+#handHeldSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+#handHeldSection > div{
+    order: 2;
+    margin-top: -71px;
+}
+#handHeldSection > img{
+    position: inherit;
+    order: 1;
+    right: 0;
+    left: 0;
+    width: 80%;
+}
+#fastSection > div {
+margin-top: 140px;
+}
+#accurateSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#checkIconBox {
+    order: 2;
+    width: 80%;
+}
+#rib{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rib > img{
+    width:80%;
+}
+header > div >div{
+    left: 58%;
+    width: 358px;
+}
+#heroDiv > h1,
+#heroDiv > p{
+width:358px;
+}
+}
+@media only screen and (max-width: 450px){
+    header{
+        height: 42vh;
+    }
+#accurateSection{
+    padding-top:188px;
+}
+#tightPipeContainer{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#easilyMeasureSection > div{
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7px;
+}
+#easilyMeasureSection > p{
+    font-size:172%;
+}
+#ulContainer{
+    order: 2;
+    margin-top: 20px;
+}
+}
+@media only screen and (max-width: 425px){
+    
+    #heroDiv > h1, #heroDiv > p {
+    width: 286px;
+    }
+    #heroDiv{
+        width: 286px;
+    }
+header > div > div > h1{
+font-size: 200%;
+margin-bottom: 0;
+}
+header > div > div > p{
+    font-size: 100%;
+    }
+    header > div >div {
+        left:56%;
+    }
 
+}
+@media only screen and (max-width: 400px){
 
+    #accurateSection{
+        padding-top:150px;
+    }
+    
+    }
+
+    @media only screen and (max-width: 360px){
+
+    #fastSection > div{
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+}
+@media only screen and (max-width: 330px){
+
+    header > div > div > h1{
+        font-size: 170%;
+    }
+    header > div > div > p{
+        font-size: 85%;
+    }
+    #heroDiv > h1, #heroDiv > p,  #heroDiv{
+        width: 244px;
+    }
+    header > div >div {
+left: 56%;
+    }
+}
+ 
